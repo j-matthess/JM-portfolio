@@ -1,0 +1,17 @@
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img{
+    width: 250px; height: auto;
+    object-fit: cover;
+}
+
+.volunteer {
+    display: flex;
+}
+
+ul {
+    margin: 0;
+}

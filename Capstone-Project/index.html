@@ -2,9 +2,12 @@
 <html>
     <head>
         <title>Jaxon Matthess | Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home.css">
     </head>
     <body>
         <header>
+            <!--Use Bootstrap Display-->
             <h1>Hello.</h1>
             <p> I'm Jaxon Matthess, an 18 year old from Janesville, Wisconsin. <br>
                 I am a student at Blackhawk Technical College in IT-Web Development, <br>
@@ -13,22 +16,32 @@
             </p>
         </header>
         <nav>
-            <ul id="nav">
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="education/">Education</a></li>
                 <li><a href="projects/">Projects</a></li>
             </ul>
         </nav>
         <main>
-            <h2>My Education.</h2>
-                <a href="education/">View More</a>
-            <h2>My Projects.</h2>
-                <a href="projects/">View More</a>
-            
+            <!--Replace with Bootstrap card-->
+            <div class="column">
+                <h2>My Education.</h2>
+                <img src="images/BTC-logo.png">
+                <figcaption>
+                    <a href="education/">View More</a>
+                </figcaption>
+            </div>
+            <div class="column">
+                <h2>My Projects.</h2>
+                <img src="images/uffizi.jpg">
+                <figcaption>
+                    <a href="projects/">View More</a>
+                </figcaption>
+            </div>
         </main>
         <footer>
-            <p>Email me at matthess.j06@gmail.com <br>Available on LinkedIn, Github</p>
-            <div id="socials"></div>
+            <p>Email me at matthess.j06@gmail.com <br>Available on LinkedIn, Github</p>     
+            <div class="socials"></div>
         </footer>
     </body>
 </html>

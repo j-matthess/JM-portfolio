@@ -2,11 +2,14 @@
 <html>
     <head>
         <title>Jaxon Matthess | My Education</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="edu.css">
     </head>
     <body>
-        <h1>My Education</h1>
+        <!--Use Bootstrap Display-->
+        <h1>My Education.</h1>
         <nav>
-            <ul id="nav">
+            <ul>
                 <li><a href="../">Home</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="../projects/">Projects</a></li>
@@ -31,21 +34,36 @@
                 <li>Adobe Photoshop, Illustrator, & Camera RAW</li>
             </ul>
             <p>
-                While in college, I am also a senior at Rock University High School and will be graduating this spring.
-                <br>During my education, I participated in multiple volunteering opportunities, including:
+                While in college, I am also a senior at Rock University High School and will be graduating this spring.<br>
+                During my education, I participated in multiple community service opportunities, including:
             </p>
-            <div>
-                <h2>Humane Society of Southern Wisconsin</h2>
-                <img>
-            </div>
-            <div>
-                <h2>Protect Wisconsin Waterways</h2>
-                <img>
+            <div class="volunteer">
+                <div class="column">
+                    <h2>Humane Society of Southern Wisconsin</h2>
+                    <img src="images/HMSW.png">
+                    <ul class="column-list">
+                        <li>Work with others to raise money through fundraising events, including
+                            raffles and selling food.
+                        </li>
+                        <li>Provide care and attention to shelter cats and dogs.
+                        </li>
+                        <li>Promote dogs available for adoption.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>Protect Wisconsin Waterways</h2>
+                    <img src="images/P-WI-W.png">
+                    <ul class="column-list">
+                        <li>Worked with others to help clean polluted lakes, rivers, and ponds in
+                            Southern Wisconsin
+                        </li>
+                    </ul>
+                </div>
             </div>
         </main>
         <footer>
             <p>Email me at matthess.j06@gmail.com <br>Available on LinkedIn, Github</p>
-            <div id="socials"></div>
+            <div class="socials"></div>
         </footer>
     </body>
 </html>
