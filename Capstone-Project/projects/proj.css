@@ -1,14 +1,23 @@
+h1 {
+    font-size: 2.25em;
+}
+
 img {
-    width: 400px; height: 350px;
-    object-fit: cover;
+    max-width: 600px;
+    max-height: 400px;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
+table {
+    margin-bottom: 1.5%;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
 }
 
-.card {
-    width: 25%;
+td {
+    padding: 10px;
+}
+
+tr {
     text-align: center;
 }

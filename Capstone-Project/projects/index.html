@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Jaxon Matthess | My Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="proj.css">
     </head>
@@ -12,39 +13,58 @@
             <ul>
                 <li><a href="../">Home</a></li>
                 <li><a href="../education/">Education</a></li>
-                <li><a href="#">Projects</a></li>
             </ul>
         </nav>
         <!--Use Bootstrap Cards-->
-        <main>
-            <div class="card">
-                <h2>Cat Cafe</h2>
-                <img src="images/cat.jpeg">
-                <figcaption>
-                    <a href="http://btcsoftware.pro/jmatthess/MarkupBasics2/Week8/MidtermProject/">View More</a>
-                </figcaption>
-            </div>
-            <div class="card">
-                <h2>Tour Service</h2>
-                <img src="images/uffizi.jpg">
-                <figcaption>
-                    <a href="http://btcsoftware.pro/jmatthess/DesignBasics2/Week14&15/">View More</a>
-                </figcaption>
-            </div>
-            <div class="card">
-                <h2>Recipe Website</h2>
-                <img src="images/recipe.jpeg">
-                <figcaption>
-                    <a href="http://btcsoftware.pro/jmatthess/FrontEndFramework/Week4/Assignment/">View More</a>
-                </figcaption>
-            </div>
-            <div class="card">
-                <h2>Global Studies Website</h2>
-                <img src="images/world_map.jpg">
-                <figcaption>
-                    <a href="https://sites.google.com/janesville.k12.wi.us/2021-22-ruhs-global-study/">View More</a>
-                </figcaption>
-            </div>
+        <main style="overflow-x:auto;">
+            <table>
+                <thead>
+                  <tr>
+                    <td>
+                        <h2>Cat Cafe</h2>
+                    </td>
+                    <td>
+                        <h2>Tour Service</h2>
+                    </td>
+                    <td>
+                        <h2>Recipe Website</h2>
+                    </td>
+                    <td>
+                        <h2>Global Studies Website</h2>
+                    </td>
+                </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/cat.jpeg">
+                        </td>
+                        <td>
+                            <img src="images/uffizi.jpg">
+                        </td>
+                        <td>
+                            <img src="images/recipe.jpeg">
+                        </td>
+                        <td>
+                            <img src="images/world_map.jpg">                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://btcsoftware.pro/jmatthess/MarkupBasics2/Week8/MidtermProject/">View More</a>
+                        </td>
+                        <td>
+                            <a href="http://btcsoftware.pro/jmatthess/DesignBasics2/Week14&15/">View More</a>
+                        </td>
+                        <td>
+                            <a href="http://btcsoftware.pro/jmatthess/FrontEndFramework/Week4/Assignment/">View More</a>
+                        </td>
+                        <td>
+                            <a href="https://sites.google.com/janesville.k12.wi.us/2021-22-ruhs-global-study/">View More</a>
+                        </td>
+                    </tr> 
+                </tbody>               
+            </table>
         </main>
         <footer>
             <p>Email me at matthess.j06@gmail.com <br>Available on LinkedIn, Github</p>

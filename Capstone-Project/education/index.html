@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Jaxon Matthess | My Education</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="edu.css">
     </head>
@@ -11,7 +12,6 @@
         <nav>
             <ul>
                 <li><a href="../">Home</a></li>
-                <li><a href="#">Education</a></li>
                 <li><a href="../projects/">Projects</a></li>
             </ul>
         </nav>
@@ -20,7 +20,7 @@
                 I am a student at Blackhawk Technical College in the IT-Web Software Development program, and will be graduating this spring. <br>
                 In this program, I've used:
             </p>
-            <ul id="langs">
+            <ul class="langs">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Python</li>
@@ -36,30 +36,52 @@
             <p>
                 While in college, I am also a senior at Rock University High School and will be graduating this spring.<br>
                 During my education, I participated in multiple community service opportunities, including:
-            </p>
-            <div class="volunteer">
-                <div class="column">
-                    <h2>Humane Society of Southern Wisconsin</h2>
-                    <img src="images/HMSW.png">
-                    <ul class="column-list">
-                        <li>Work with others to raise money through fundraising events, including
-                            raffles and selling food.
-                        </li>
-                        <li>Provide care and attention to shelter cats and dogs.
-                        </li>
-                        <li>Promote dogs available for adoption.</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h2>Protect Wisconsin Waterways</h2>
-                    <img src="images/P-WI-W.png">
-                    <ul class="column-list">
-                        <li>Worked with others to help clean polluted lakes, rivers, and ponds in
-                            Southern Wisconsin
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </p>           
+            <div style="overflow-x:auto;"><table>
+                <thead>
+                  <tr>
+                    <td>
+                        <h2>Humane Society of Southern Wisconsin</h2>
+
+                    </td>
+                    <td>
+                        <h2>Protect Wisconsin Waterways</h2>
+                       
+                    </td>
+                </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/HMSW.png">
+                        </td>
+                        <td>
+                            <img src="images/P-WI-W.png">
+                        </td>
+                    </tr>
+                    <tr class="bullets">
+                        <td>
+                            <ul class="column-list">
+                                <li>Work with others to raise money through fundraising events, including
+                                    raffles and selling food. Helped raise about $2,400.
+                                </li>
+                                <li>
+                                    Provide care and attention to shelter cats and dogs.
+                                </li>
+                                <li>
+                                    Promote dogs available for adoption.
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <li>
+                                Worked with others to help clean polluted lakes, rivers, and ponds in
+                                Southern Wisconsin
+                            </li>
+                        </td>
+                    </tr>  
+                </tbody>
+            </table></div>
         </main>
         <footer>
             <p>Email me at matthess.j06@gmail.com <br>Available on LinkedIn, Github</p>

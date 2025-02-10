@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Jaxon Matthess | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="home.css">
     </head>
@@ -15,29 +16,38 @@
                 I'm new to the web development scene, so come join me in my journey.<br>
             </p>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="education/">Education</a></li>
-                <li><a href="projects/">Projects</a></li>
-            </ul>
-        </nav>
-        <main>
+        <main style="overflow-x:auto;">
             <!--Replace with Bootstrap card-->
-            <div class="column">
-                <h2>My Education.</h2>
-                <img src="images/BTC-logo.png">
-                <figcaption>
-                    <a href="education/">View More</a>
-                </figcaption>
-            </div>
-            <div class="column">
-                <h2>My Projects.</h2>
-                <img src="images/uffizi.jpg">
-                <figcaption>
-                    <a href="projects/">View More</a>
-                </figcaption>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <h2>My Education.</h2>
+                        </td>
+                        <td>
+                            <h2>My Projects.</h2>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/BTC-logo.png"> 
+                        </td>
+                        <td>
+                            <img src="images/uffizi.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="education/">View More</a>
+                        </td>
+                        <td>
+                            <a href="projects/">View More</a>
+                        </td>
+                    </tr> 
+                </tbody>              
+            </table>
         </main>
         <footer>
             <p>Email me at matthess.j06@gmail.com <br>Available on LinkedIn, Github</p>     
