@@ -3,18 +3,19 @@
     <head>
         <title>Jaxon Matthess | My Education</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="edu.css">
     </head>
     <body>
-        <!--Use Bootstrap Display-->
-        <h1>My Education.</h1>
+        <h1 class="display-4">My Education.</h1>
         <nav>
             <ul>
                 <li><a href="../">Home</a></li>
                 <li><a href="../projects/">Projects</a></li>
             </ul>
         </nav>
+
         <main>
             <p>
                 I am a student at Blackhawk Technical College in the IT-Web Software Development program, and will be graduating this spring. <br>
@@ -25,42 +26,29 @@
                 <li>CSS</li>
                 <li>Python</li>
                 <li>JS & jQuery</li>
+                <li>PHP</li>
+                <li>SQL & MySQL</li>
                 <li>Bootstrap</li>
                 <li>WordPress</li>
                 <li>React</li>
                 <li>Git</li>
                 <li>Apache</li>
                 <li>Dart & Flutter</li>
-                <li>Adobe Photoshop, Illustrator, & Camera RAW</li>
+                <li>Adobe&nbsp;Photoshop, Illustrator, & Camera&nbsp;RAW</li>
             </ul>
             <p>
                 While in college, I am also a senior at Rock University High School and will be graduating this spring.<br>
                 During my education, I participated in multiple community service opportunities, including:
             </p>           
-            <div style="overflow-x:auto;"><table>
-                <thead>
-                  <tr>
-                    <td>
-                        <h2>Humane Society of Southern Wisconsin</h2>
+            
 
-                    </td>
-                    <td>
-                        <h2>Protect Wisconsin Waterways</h2>
-                       
-                    </td>
-                </tr>  
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="images/HMSW.png">
-                        </td>
-                        <td>
-                            <img src="images/P-WI-W.png">
-                        </td>
-                    </tr>
-                    <tr class="bullets">
-                        <td>
+        <div class="container my-4">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="images/HMSW.png" class="card-img-top img-fluid" alt="Logo of the Humane Society of Southern Wisconsin">
+                        <div class="card-body">
+                            <h4 class="card-title display-6">Humane Society Southern Wisconsin</h4>
                             <ul class="column-list">
                                 <li>Work with others to raise money through fundraising events, including
                                     raffles and selling food. Helped raise about $2,400.
@@ -72,16 +60,25 @@
                                     Promote dogs available for adoption.
                                 </li>
                             </ul>
-                        </td>
-                        <td>
-                            <li>
-                                Worked with others to help clean polluted lakes, rivers, and ponds in
-                                Southern Wisconsin
-                            </li>
-                        </td>
-                    </tr>  
-                </tbody>
-            </table></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="images/P-WI-W.png" class="card-img-top img-fluid" alt="Logo of Protect Wisconsin Waterways">
+                        <div class="card-body">
+                            <h4 class="card-title display-6">Protect Wisconsin Waterways</h4>
+                            <ul class="column-list">
+                                <li>
+                                    Worked with others to help clean polluted lakes, rivers, and ponds in
+                                    Southern Wisconsin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </main>
         <footer>
             <p>Email me at matthess.j06@gmail.com <br>Available on LinkedIn, Github</p>

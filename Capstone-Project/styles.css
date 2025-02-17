@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     box-sizing: border-box;
     font-family:'Noto Serif' ;
-}
+} */
 
 :root {
     --bg_color:#0A0C11;
@@ -11,19 +11,7 @@
 }
 
 body {
-    font-size: 1.2em;
-    margin: 0;
-    padding: var(--padding-8);
-    background-color: var(--bg_color);
-    color: white;
-}
-
-h1 {
-    margin: 0;
-}
-
-h2 {
-    font-size: 1.75em;
+    padding: 1em;
 }
 
 nav ul {
@@ -39,62 +27,17 @@ nav li {
 nav a {
     display: block;
     padding: 5px;
-    color: lightgray;
+    /*color: lightgray;*/
 }
-
+/*
 nav a:hover {
     color:lightblue;
 }
-
-.column {
-    flex: 1%;
-}
-
-img {
-    object-fit: cover;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 1.5%;
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-}
-
-td {
-    padding: 15px;
-}
-
-/* Possibly future table design, https://css-tricks.com/accessible-simple-responsive-tables/ 
-
-.Rtable {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 3em 0;
-    padding: 0;
-}
-
-.Rtable-cell {
-  box-sizing: border-box;
-  flex-grow: 1;
-  width: 100%; 
-  padding: 0.8em 1.2em;
-  overflow: hidden;
-  list-style: none;
-  > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
-}
 */
+.card-body {
+    padding: 1vh;
+}
 
-/* Table column sizing
-================================== */
-.Rtable--2cols > .Rtable-cell  { width: 50%; }
-.Rtable--3cols > .Rtable-cell  { width: 33.33%; }
-.Rtable--4cols > .Rtable-cell  { width: 25%; }
-.Rtable--5cols > .Rtable-cell  { width: 20%; }
-.Rtable--6cols > .Rtable-cell  { width: 16.6%; }
-
-
-
-
+footer {
+    text-align: center;
+}

@@ -1,18 +1,5 @@
-h1 {
-    font-size: 2.25em;
-}
-
-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 ul {
     margin: 0;
-}
-
-table ul {
-    padding-top: 10px;
 }
 
 .langs {
@@ -20,15 +7,18 @@ table ul {
     padding-left: 0;
 }
 
-.langs li{
+.langs > li{
     border-bottom: 1px solid lightblue;
 }
 
-img {
-    max-width: 250px;
-    max-height: 250px;
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 20vw;
 }
 
-tr:not(.bullets) {
-    text-align: center;
+@media only screen and (max-width:767px) {
+    .card-img-top {
+        height: 40vw;
+    }
 }
