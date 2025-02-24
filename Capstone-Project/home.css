@@ -6,8 +6,11 @@ header > p {
     font-size: larger;
 }
 
+.card {
+    overflow: hidden;
+}
+
 .card-img-top {
-    object-fit: cover;
     width: 100%;
     height: 20vw;
 }
@@ -28,9 +31,5 @@ header > p {
     .card-img-top{
         height: 45vw;
     }
-}
-
-.card-body {
-    padding: 1vh;
 }
 
