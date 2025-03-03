@@ -14,6 +14,10 @@ body {
     padding: 1em;
 }
 
+.titleText, .navText, .headText, .bodyText, .footerText {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -26,7 +30,7 @@ nav li {
 
 nav a {
     display: block;
-    padding: 5px;
+    padding: 5px 10px 5px 0;
     /*color: lightgray;*/
 }
 /*
@@ -53,6 +57,7 @@ a > .card-img-top:hover {
     z-index: 1;
     background-color: inherit;
 }
+
 
 footer {
     text-align: center;
