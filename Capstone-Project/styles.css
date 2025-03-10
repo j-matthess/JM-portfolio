@@ -11,13 +11,15 @@
 }
 
 body {
-    padding: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 .titleText, .navText, .headText, .bodyText, .footerText {
     display: none;
 }
 
+/* 
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,14 +32,52 @@ nav li {
 
 nav a {
     display: block;
-    padding: 5px 10px 5px 0;
-    /*color: lightgray;*/
-}
+    padding: 0px 10px 10px 0;*/
+    /*color: lightgray;
+}*/
+
 /*
 nav a:hover {
     color:lightblue;
 }
 */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 3rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+} 
+
+.header ul {
+    margin: 0;
+    display: flex;
+    gap: 1.9rem;
+    list-style-type: none;
+}
+
+.header a {
+    font-size: calc(1rem + 1vw);
+    text-decoration: none;
+}
+
+.card-text {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.header a:hover, .card-text:hover {
+    border-bottom: 2px solid rgba(var(--bs-link-color-rgb));
+}
+
+main {
+    padding: 1em;
+}
 
 .card {
     overflow: hidden;
@@ -62,3 +102,28 @@ a > .card-img-top:hover {
 footer {
     text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+    .header a {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .header {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header ul {
+        flex-direction: column;
+        padding: 0;  
+        gap: 1rem;     
+    }
+
+    nav {
+        text-align: center;
+    }
+}
+
