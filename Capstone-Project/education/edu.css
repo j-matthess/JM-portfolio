@@ -1,10 +1,25 @@
-.langs {
-    list-style-type: none;
-    padding-left: 0;
+.headText p{
+    margin: 0;
 }
 
-.langs > li{
+.skills {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.25rem 0;
+    overflow: auto;
+}
+
+.skills > li{
     border-bottom: 1px solid rgb(136, 170, 182);
+}
+
+.skills {
+    column-count: 3;
+    column-gap: normal;
+}
+
+.skills > li, .headText, .lowerText, .column-list {
+    font-size: calc(0.5vw + 0.5rem);
 }
 
 .card-img-top {
@@ -12,8 +27,32 @@
     height: 20vw;
 }
 
+
+@media only screen and (max-width: 1600px){
+    .skills > li, .headText, .lowerText, .column-list {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}
+
+@media only screen and (max-width:991px) {
+    .skills {
+        column-count: 2;
+    }
+}
+
 @media only screen and (max-width:767px) {
     .card-img-top {
         height: 40vw;
     }
 }
+
+@media only screen and (max-width:480px) {
+    .skills {
+        column-count: 1;
+    }
+}
+

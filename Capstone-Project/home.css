@@ -1,5 +1,15 @@
 header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: block;
+    flex-direction: row;
+    gap: 10rem;
+    padding: 2vh 1vh 0
+}
+
+.headText {
+    font-size: calc(0.5rem + 0.5vw);
 }
 
 header > p {
@@ -27,9 +37,25 @@ header > p {
     }
 }
 
+@media only screen and (max-width:991px) {
+    header {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 16px;
+    }
+}
+
 @media only screen and (max-width:767px){
     .card-img-top{
         height: 45vw;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .headText {
+        font-size: 1.25rem;
     }
 }
 
